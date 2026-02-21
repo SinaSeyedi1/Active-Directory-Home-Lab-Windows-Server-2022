@@ -65,3 +65,12 @@ User created compliant password successfully.
 - Security policy enforcement
 - User guidance
 - Authentication troubleshooting
+
+
+### Evidence
+
+![Password Reset](01-Password-Reset-With-Force-Change.png)
+
+![Runas Error](02-Password-Must-Change-At-Next-Logon-Enforced.png)
+
+![Password Verified via net user](03-Password-Last-Set-Verified-Net-User.png)
