@@ -33,3 +33,15 @@ This setup simulates real-world Helpdesk tasks such as onboarding users, grantin
 - Access control management
 - Permission troubleshooting
 - Basic identity lifecycle management
+
+
+## Screenshots
+
+### 1. Users Created in Corp-Users OU
+![Users Created](01-users-created-in-corp-users.png)
+
+### 2. Security Group Created (SG-FileShare-Users)
+![Security Group Created](02-security-group-created.png)
+
+### 3. User Added to Security Group
+![User Added to Group](03-user-added-to-security-group.png)
