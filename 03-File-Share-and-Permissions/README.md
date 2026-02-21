@@ -37,3 +37,15 @@ This setup demonstrates understanding of layered permission models (Share + NTFS
 - Security group-based access control
 - Access troubleshooting methodology
 - Principle of Least Privilege
+
+
+## Screenshots
+
+### 1. Shared Folder Created
+![Shared Folder](01-shared-folder-created.png)
+
+### 2. NTFS Permissions Assigned to Security Group
+![NTFS Permissions](02-ntfs-permissions-configured.png)
+
+### 3. Share Permissions Configured
+![Share Permissions](03-share-permissions-configured.png)
