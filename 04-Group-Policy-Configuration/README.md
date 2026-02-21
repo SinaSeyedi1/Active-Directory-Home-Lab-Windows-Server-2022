@@ -36,3 +36,15 @@ This configuration demonstrates understanding of domain-level security enforceme
 - Account lockout troubleshooting
 - Policy validation techniques
 - Enterprise authentication controls
+
+
+## Screenshots
+
+### 1. Account Lockout Policy Configuration
+![Account Lockout Policy](01-Account-Lockout-Configuration.png)
+
+### 2. Password Policy Configuration
+![Password Policy](02-Password-Policy-Configured.png)
+
+### 3. Group Policy Modeling Validation (Lab User 2)
+![GPO Modeling Validation](03-GPO-Modeling-LabUser2-Validation.png)
