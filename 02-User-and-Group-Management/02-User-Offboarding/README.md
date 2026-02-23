@@ -16,7 +16,7 @@ A user is leaving the organisation and must have all access revoked.
 
 A Disabled-Users OU was created to store inactive accounts.
 
-![Disabled Users OU](01-Disabled-Users-OU-Created.png)
+![Disabled Users OU](01-User-Offboarding.png)
 
 ---
 
@@ -24,7 +24,7 @@ A Disabled-Users OU was created to store inactive accounts.
 
 The user was removed from assigned security groups to revoke access.
 
-![Removed From Security Group](02-Removed-From-Security-Group.png)
+![Removed From Security Group](02-User-Account-Disabled.png)
 
 ---
 
@@ -32,7 +32,7 @@ The user was removed from assigned security groups to revoke access.
 
 The account was disabled to prevent authentication.
 
-![User Disabled](03-User-Account-Disabled.png)
+![User Disabled](03-Removed-From-Security-Group.png)
 
 ---
 
