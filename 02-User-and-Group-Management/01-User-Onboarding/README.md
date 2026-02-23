@@ -1,50 +1,46 @@
-User Onboarding Process
-Overview
+# User Onboarding Process
 
-This section demonstrates a structured user onboarding process in Active Directory using Windows Server 2022. The goal is to simulate how a helpdesk or junior system administrator would provision access for a new employee in a corporate environment.
+## Overview
 
-Scenario
+This section demonstrates provisioning a new domain user in Active Directory using structured enterprise practices.
+
+---
+
+## Scenario
 
 A new employee joins the organisation and requires:
 
-A domain user account
+- A domain user account
+- Correct OU placement
+- Security group membership
+- Access to shared resources
 
-Placement in the correct Organizational Unit (OU)
+---
 
-Membership in appropriate security groups
+## Step 1 – Create User Account
 
-Access to shared resources
+A new domain user was created inside the Corp-Users OU.
 
-Steps Performed
-1. User Account Creation
+![Users Created](01-lab-users-created-in-corp-users.png)
 
-Created a new domain user in the Corp-Users OU.
+---
 
-Configured initial password settings.
+## Step 2 – Create Security Group
 
-Enabled "User must change password at next logon".
+A security group was created to manage access to shared resources.
 
-Screenshot:
-01-users-created-in-corp-users.png
+![Security Group Created](02-security-group-created.png)
 
-2. Security Group Assignment
+---
 
-Created or identified the required security group.
+## Step 3 – Add User to Security Group
 
-Added the user to the relevant security group to grant access.
+The user was added to the security group to grant appropriate access.
 
-Screenshot:
-02-security-group-created.png
-03-user-added-to-security-group.png
+![User Added to Security Group](03-user-added-to-security-group.png)
 
-Outcome
+---
 
-The user account was successfully provisioned with:
+## Outcome
 
-Proper OU placement
-
-Correct security group membership
-
-Controlled access to shared resources
-
-This demonstrates structured onboarding aligned with common enterprise Active Directory practices.
+The user was successfully provisioned using group-based access control and proper OU structure, demonstrating practical Active Directory user lifecycle management.
