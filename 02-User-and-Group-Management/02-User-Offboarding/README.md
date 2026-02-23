@@ -1,68 +1,61 @@
-User Offboarding Process
-Overview
+# User Offboarding Process
 
-This section demonstrates a structured user offboarding process in Active Directory using Windows Server 2022. The objective is to securely deprovision a departing user by removing access, disabling the account, and maintaining directory hygiene.
+## Overview
 
-This simulates how a helpdesk or junior system administrator would handle user lifecycle management in a corporate environment.
+This section demonstrates secure user deprovisioning in Active Directory.
 
-Scenario
+---
 
-A user is leaving the organisation and must no longer have access to domain resources.
+## Scenario
 
-The following steps were performed to ensure secure and controlled deprovisioning.
+A user is leaving the organisation and must have all access revoked.
 
-Step 1 – Create Disabled Users OU
+---
 
-A dedicated Disabled-Users Organizational Unit was created to store inactive accounts.
-This helps maintain a clean and organised Active Directory structure.
+## Step 1 – Create Disabled Users OU
 
-Screenshot:
-00-Disabled-Users-OU-Created.png
+A Disabled-Users OU was created to store inactive accounts.
 
-Step 2 – Remove From Security Groups
+![Disabled Users OU](01-Disabled-Users-OU-Created.png)
 
-The user was removed from assigned security groups to immediately revoke access to shared resources.
+---
 
-Screenshot:
-01-Removed-From-Security-Group.png
+## Step 2 – Remove From Security Groups
 
-Step 3 – Disable User Account
+The user was removed from assigned security groups to revoke access.
 
-The account was disabled to prevent any further authentication attempts.
+![Removed From Security Group](02-Removed-From-Security-Group.png)
 
-Screenshot:
-02-User-Account-Disabled.png
+---
 
-Step 4 – Move Account to Disabled OU
+## Step 3 – Disable User Account
 
-The user account was moved to the Disabled-Users OU to separate inactive accounts from active users.
+The account was disabled to prevent authentication.
 
-Screenshot:
-03-User-Moved-To-Disabled-Users-OU.png
+![User Disabled](03-User-Account-Disabled.png)
 
-Step 5 – Verify Account Status
+---
 
-Account status was verified using the command:
+## Step 4 – Verify Account Status
+
+Verification was performed using:
 
 net user "Lab User 2" /domain
 
-Verification confirmed:
+The output confirmed Account active: No.
 
-Account active: No
+![Verification](04-Account-Disabled-Verification-Net-User.png)
 
-Screenshot:
-04-Account-Disabled-Verification-Net-User.png
+---
 
-Outcome
+## Step 5 – Move User to Disabled OU
 
-The user account was successfully deprovisioned following structured enterprise practices:
+The account was moved to the Disabled-Users OU for directory hygiene.
 
-Access revoked
+![Moved to Disabled OU](05-User-Moved-To-Disabled-Users-OU.png)
 
-Account disabled
+---
 
-Directory organised
+## Outcome
 
-Status verified
-
-This demonstrates practical understanding of secure user lifecycle management in Active Directory.
+The account was securely deprovisioned using structured offboarding practices including access removal, account disabling, and verification.
