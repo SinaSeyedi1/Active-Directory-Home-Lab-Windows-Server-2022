@@ -21,7 +21,7 @@ A new employee joins the organisation and requires:
 
 A new domain user was created inside the Corp-Users OU.
 
-![Users Created](01-lab-users-created-in-corp-users.png)
+![Users Created](01-users-created-in-corp-users.png)
 
 ---
 
